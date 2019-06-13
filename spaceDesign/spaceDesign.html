@@ -32,7 +32,7 @@
         width:50%;
         /* border:2px solid palevioletred;  */
     }
-img{
+#imgLogo{
 height:50px;
 padding-left: 20%;
 padding-top: 3%;
@@ -140,12 +140,17 @@ border-radius: 2px;
 transition: all 1s;
 box-shadow:  2px 2PX 10px #706767;
 }
+#pen{
+    height:50px;
+
+opacity: 0.3;
+}
 </style>
 </head>
 <body background="https://chainimage.com/images/island-stars-night-water-ocean-shadownature-free-hd-wallpapers.jpg">
 <div id="header">
     <div id="leftDiv">
-        <img src="blueBody.jpg" alt="logo">
+        <img id='imgLogo' src="blueBody.jpg" alt="logo">
     </div>
     <div id="RightDiv">
         <br>
@@ -170,7 +175,9 @@ box-shadow:  2px 2PX 10px #706767;
             <button class='buttonCentre'>LEARN MORE</button>
             <button class='buttonCentre'>GET STARTED</button>
         </div>
-        <div id='imageDiv'></div>
+        <div id='imageDiv'>
+            <img id='pen' src="whatsappIcon" alt="">
+        </div>
     </div>
 </div>
 </body>
