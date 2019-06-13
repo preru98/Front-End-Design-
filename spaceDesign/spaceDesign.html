@@ -1,171 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
-    <style>
-        body{
-            margin:0;
-        }
-        #header{
-            position: relative; 
-            top:0%;
-            left:0%;
-            height:10vh;
-            width:100%;
-            /* border:2px solid chartreuse;  */
-        }
-        #leftDiv{
-            position: absolute; 
-            float: left;
-            top:0%;
-            left:0%;
-            height:inherit;
-            width : 30%;
-            /* border:2px solid cornsilk;  */
-        }
-        #RightDiv{
-            position: absolute; 
-            float: right;
-            top:0%;
-            left:50%;
-            height:inherit;
-            width:50%;
-            /* border:2px solid palevioletred;  */
-        }
+<title>Document</title>
+<style>
+    body{
+        margin:0;
+    }
+    #header{
+        position: relative; 
+        top:0%;
+        left:0%;
+        height:10vh;
+        width:100%;
+        border:2px solid chartreuse; 
+    }
+    #leftDiv{
+        position: absolute; 
+        float: left;
+        top:0%;
+        left:0%;
+        height:inherit;
+        width : 30%;
+        border:2px solid cornsilk; 
+    }
+    #RightDiv{
+        position: absolute; 
+        float: right;
+        top:0%;
+        left:50%;
+        height:inherit;
+        width:50%;
+        border:2px solid palevioletred; 
+    }
 img{
-    height:50px;
-    padding-left: 20%;
-    padding-top: 3%;
-    opacity: 0.3;
+height:50px;
+padding-left: 20%;
+padding-top: 3%;
+opacity: 0.3;
 }
 .buttonHeader{
-    background-color: transparent;
-    color: white;
-    border:none;
-    outline: none;
-    /* border: 1px solid black; */
-    padding: 14px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family:roboto;
-    font-size: 10pt;
-    opacity: 0.5;
-    cursor: pointer;
+background-color: transparent;
+color: white;
+border:none;
+outline: none;
+
+padding: 14px 16px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-family:roboto;
+font-size: 10pt;
+opacity: 0.5;
+cursor: pointer;
+border: 1px solid black;
 }
 .buttonHeader:hover{
-    opacity: 1;
-    background-color:#2B4067;
-    border-radius: 6px;
+opacity: 1;
+background-color:#2B4067;
+border-radius: 6px;
+transition: all 1s;
 }
 #clearDiv{
-    position: static;
-    clear:both;
-    /* border: 2px solid black; */
-    width: inherit;
-    height: 18vh;
+position: static;
+clear:both;
+
+width: inherit;
+height: 18vh;
+border: 2px solid black;
 }
 #mainSection{
-    position: static; 
-            top:0%;
-            left:0%;
-            height:26vh;
-            width:100%;
-            /* border:2px solid orange;  */
+position: static; 
+        top:0%;
+        left:0%;
+        height:26vh;
+        width:100%;
+        border:2px solid orange; 
 }
 #textDiv{
-    position: fixed; 
-            top:25%;
-            left:25%;
-            height:15vh;
-            width:30%;
-            /* border:2px solid pink; */
-             
+position: fixed; 
+        top:25%;
+        left:25%;
+        height:15vh;
+        width:30%;
+        border:2px solid pink;
+            
 }
 #imageDiv{
-    position: fixed; 
-            top:50%;
-            left:0%;
-            height:15vh;
-            width:inherit;
-            /* border:2px solid green; */
+position: fixed; 
+        top:50%;
+        left:0%;
+        height:15vh;
+        width:inherit;
+        border:2px solid green;
 }
 .bigText{
-  /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 32px;
-  height: 34.5px;
-  font-size: 26pt;
-  color:white;
-  opacity: 0.8;
-  padding-top: 3%;
-  padding-bottom: 2%;
+/* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+line-height: 32px;
+height: 34.5px;
+font-size: 26pt;
+color:white;
+opacity: 0.8;
+padding-top: 3%;
+padding-bottom: 2%;
 margin: 0%
-        }
+    }
 #smolText{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  line-height: 1px;
-  /* height: 32px; */
-  font-size: 12pt;
-  color:white;
-  opacity: 0.8;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+line-height: 1px;
+/* height: 32px; */
+font-size: 12pt;
+color:white;
+opacity: 0.8;
 padding-bottom: 0%;
 margin: 0%
 }
 
 .buttonCentre{
-    background-color: transparent;
-    color: white;
-    border:none;
-    outline: none;
-    /* border: 1px solid black; */
-    padding: 14px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family:roboto;
-    font-size: 10pt;
-    opacity: 0.5;
-    cursor: pointer;
-     border: 1px solid grey;
-
+background-color: transparent;
+color: white;
+border:none;
+outline: none;
+/* border: 1px solid black; */
+padding: 14px 16px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-family:roboto;
+font-size: 10pt;
+opacity: 0.5;
+cursor: pointer;
+border: 1px solid grey;
+transition: all 1;
 }
 .buttonCentre:hover{
-    opacity: 1;
-    background-color:rgb(84, 113, 170);
-    border-radius: 2px;
-    </style>
+opacity: 1;
+background-color:rgb(84, 113, 170);
+border-radius: 2px;
+</style>
 </head>
 <body background="https://chainimage.com/images/island-stars-night-water-ocean-shadownature-free-hd-wallpapers.jpg">
 <div id="header">
-     <div id="leftDiv">
-         <img src="blueBody.jpg" alt="logo">
-     </div>
-     <div id="RightDiv">
-         <br>
-         <a href="https://www.w3schools.com/css/css3_buttons.asp"><button class="buttonHeader">Home</button></a><!-- 
-      --><button class="buttonHeader">Account</button><!--
-      --><button class="buttonHeader">Features</button><!--   
-      --><button class="buttonHeader">Developers</button><!--
-      --><button class="buttonHeader">Pricing</button><!--
-      --><button class="buttonHeader">Support</button><!--
-      --><button class="buttonHeader">GET STARTED</button>
-     </div>
-     
-     <div id='clearDiv'>
-         <br>
-     </div>
-     <div id='mainSection'>
-         <div id='textDiv'>
-             <p id="smolText">The night sky</p>
-             <p class="bigText">Beyond The<br>Naked Eye</p>
-                <!-- <p class="bigText">Naked Eye</p> </div> -->
-                <br><br>
-                <button class='buttonCentre'>LEARN MORE</button>
-                <button class='buttonCentre'>GET STARTED</button>
-         </div>
-         <div id='imageDiv'></div>
-     </div>
+    <div id="leftDiv">
+        <img src="blueBody.jpg" alt="logo">
+    </div>
+    <div id="RightDiv">
+        <br>
+        <a href="https://www.w3schools.com/css/css3_buttons.asp"><button class="buttonHeader">Home</button></a><!-- 
+    --><button class="buttonHeader">Account</button><!--
+    --><button class="buttonHeader">Features</button><!--   
+    --><button class="buttonHeader">Developers</button><!--
+    --><button class="buttonHeader">Pricing</button><!--
+    --><button class="buttonHeader">Support</button><!--
+    --><button class="buttonHeader">GET STARTED</button>
+    </div>
+    
+    <div id='clearDiv'>
+        <br>
+    </div>
+    <div id='mainSection'>
+        <div id='textDiv'>
+            <p id="smolText">The night sky</p>
+            <p class="bigText">Beyond The<br>Naked Eye</p>
+            <!-- <p class="bigText">Naked Eye</p> </div> -->
+            <br><br>
+            <button class='buttonCentre'>LEARN MORE</button>
+            <button class='buttonCentre'>GET STARTED</button>
+        </div>
+        <div id='imageDiv'></div>
+    </div>
 </div>
 </body>
 </html>
