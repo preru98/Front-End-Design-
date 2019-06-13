@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            margin: 0;
+            background: #D4DAD8;
+        }
+    #header{
+        position: relative;
+        top: 0%;
+        left: 0%;
+        background: #00C7A8;
+        height: 36vh; 
+        width: 100%; 
+    }
+    #mainSection{
+        position:absolute;
+        top: 15%;
+        left: 18%;
+        background: #FFFFFF;
+        height: 90vh; 
+        width: 64%; 
+        border-radius: 6px;
+        box-shadow:  -5px 5PX 10px #888888, 5px 5PX 10px #888888;
+        border:2px solid coral; 
+    }
+    #icon
+    {   position: relative;
+        top: 27px;
+        left: 175px;
+        height: 40px;
+        width: 40px;
+    }
+    #name
+    {
+        position:relative;
+        display: inline-block;
+        color: white;
+        top: 15px;
+        left: 175px;
+        font-weight: bold;
+    }
+     #Heading{
+      position: absolute;
+      color:#919598;
+      font-weight: bold;
+      font-size: 17pt;
+      left: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .instructionHeader
+    { float: left;
+      position: absolute;
+      color:#919598;
+      top: 0px;
+      left: 0px;
+      font-weight: bold;
+      height: inherit;
+      width:60%;
+      border:2px solid blue; 
+
+    }
+    #qrCode
+    { float: right;
+      position: absolute;
+      color:#919598;
+      top: 0px;
+      left: 500px;
+      border:2px solid blueviolet; 
+      height: inherit;
+      width:32%;
+    }
+    .normal{
+        font-weight: 100;
+    }
+    .Heading{
+      position: static;
+      color:#919598;
+      font-weight: bold;
+      font-size: 17pt;
+      left: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    img{
+        position:absolute;
+        top: 100px;
+        left: 70px;
+    }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <img id="icon" src="whatsappIcon" alt="icon">
+        <p id='name'>WHATSAPP WEB</p>
+    </div>
+
+    <div id="mainSection">
+        <div class='instructionHeader'><br><br><br><br>
+            <p class="Heading" style="font-weight:bold;">To use WhatsApp on your computer:</p>
+        </div>
+        <p class="Heading normal">Open WhatsApp on your phone</p>
+        <p class="Heading normal">Tap menu or settings and select WhatsApp Web</p>
+        <p class="Heading normal">Point your phone to this screen to capture the code</p>
+        <div id='qrCode'>
+            <img src="qrCode.png" alt="Scan me">
+        </div>
+    </div>
+         <div style="clear:both"></div>
+</body>
+</html>
