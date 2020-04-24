@@ -1,0 +1,47 @@
+body{
+    margin:0;
+    padding:0;
+    text-align: center;
+    background: url("bg18\ \(copy\).jpg");
+    /* font-family: Century Gothic; */
+}
+.header {
+    margin-top:100px;
+    color:white; 
+}
+.header h1 {
+    font-size:200%;
+    line-height: 40%; 
+    /* border: 2px solid greenyellow; */
+}
+.header h2 {
+    font-size:100%;
+    /* line-height: 16px;  */
+}
+.form{
+    margin-top:50px;
+}
+.form-control{
+    width:600px;
+    background: transparent;
+    border:none;
+    outline:none;
+    border-bottom:1px solid grey;
+    color:white;
+    font-size: 18px;
+    margin-bottom:16px;
+}
+.input{
+    height:45 px;
+}
+
+.submit{
+    background-color:orangered;
+    border-color:transparent;
+    color:  white;
+    font-size:20px;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top:20px;
+    cursor: pointer;
+}
