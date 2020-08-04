@@ -4,9 +4,9 @@ body{
     /* background-color: #e7e6e6; */
 }
 
-div{
-    /* border:2px solid white; */
-}
+/* div{
+    border:2px solid white;
+} */
 
 #main-container{
     border:2px solid black;
@@ -47,6 +47,7 @@ div{
     background-color:#e7e6e6;
     display:flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .buttons-container{
@@ -83,6 +84,7 @@ div{
 
 .text-div{
     justify-self:center;
+    /* color:greenyellow; */
 }
 
 .left{
@@ -112,6 +114,12 @@ div{
     width: 40px;
     cursor: pointer;
 }
+
+/* .mid-div{
+    position:absolute;
+    height:100vh;
+    width:100px;
+} */
 
 
 
