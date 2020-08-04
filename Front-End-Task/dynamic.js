@@ -34,6 +34,7 @@ quantity_input.addEventListener('change', ()=>{
     lastPage=Math.ceil(quantity_input.value/3);
     // alert("Changed Current Page :"+currentPage);
     // alert("Changed Last Page :"+lastPage);
+    PageNumber.innerText="Current Page: "+currentPage;
     renderCurrentPage(currentPage);
 })
 
