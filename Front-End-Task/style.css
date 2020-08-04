@@ -1,11 +1,13 @@
 body{
     margin:0;
     display: flex;
+    /* background-color: #e7e6e6; */
 }
 
 div{
-    border:2px solid white;
+    /* border:2px solid white; */
 }
+
 #main-container{
     border:2px solid black;
     height:100vh;
@@ -22,17 +24,39 @@ div{
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
+    text-align: center;
 }
 
 .right-div{
-    border:1px solid #a1a1a1;
+    /* border:1px solid #a1a1a1; */
+    /* border:3px solid black; */
     height:100vh;
     /* width:20vw; */
     flex:5;
     background-color:#e7e6e6;
     display:flex;
     flex-direction: column;
-    
+    justify-content: flex-start;
+    /* margin: 0px; */
+}
+
+.dynamic-div-container{
+    /* border:3px solid yellow; */
+    /* height:100vh; */
+    flex:4;
+    background-color:#e7e6e6;
+    display:flex;
+    flex-direction: column;
+}
+
+.buttons-container{
+    /* border:3px solid blue; */
+    /* margin-top:100px;
+    margin-bottom:50px; */
+    /* background-color: #afabab; */
+    text-align: center;
+    /* height: 70px; */
+    flex:1;
 }
 
 .div-generated{
@@ -43,7 +67,7 @@ div{
     margin: 30px;
     align-items: center;
     text-align: center;
-    background-color: #d0cece;
+    background-color: #afabab;
 }
 
 .disk-number{
@@ -53,6 +77,8 @@ div{
     border-radius:50%;
     margin:20px;
     text-align: center;
+    background-color:	#d0cece;
+    border:1px solid#afabab;
 }
 
 .text-div{
@@ -72,13 +98,19 @@ div{
     h
 } */
 
-.option-div{
+/* .option-div{
     
     
-}
+} */
 
 .quantity-div{
     padding:10px;
+}
+
+.image{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
 }
 
 

@@ -1,11 +1,11 @@
 var quantity_input = document.getElementById('quantity');
 var PageNumber = document.getElementById('page-number');
 var forwardButton=document.getElementById('forward-button');
-var backwardButton=document.getElementById('backward-button');
+var backwardButton = document.getElementById('backward-button');
 var firstPage=1;
 var allowedDivs=3;
 var currentPage = firstPage;
-var lastPage =firstPage;
+var lastPage = firstPage;
 
 // alert("Begin :"+currentPage);
 // alert("Begin :"+lastPage);
@@ -14,7 +14,7 @@ forwardButton.addEventListener('click', ()=>{
     if(currentPage<lastPage){
         currentPage++;
         // alert("Changed Current Page F:"+currentPage);
-        PageNumber.innerText=currentPage;
+        PageNumber.innerText="Current Page: "+currentPage;
         renderCurrentPage(currentPage);
     }
 })
@@ -23,7 +23,7 @@ backwardButton.addEventListener('click', ()=>{
     if(currentPage>1){
         currentPage--;
         // alert("Changed Current Page B:"+currentPage);
-        PageNumber.innerText=currentPage;
+        PageNumber.innerText="Current Page: "+currentPage;
         renderCurrentPage(currentPage);
     }
 })
@@ -70,7 +70,7 @@ deletePreviousDivs=() => {
 renderCurrentPage=(currentPage) => {
     deletePreviousDivs();
 
-    let rightContainer = document.querySelector('#right-container');
+    let rightContainer = document.querySelector('.dynamic-div-container');
     let block_number=(currentPage-firstPage)*allowedDivs+firstPage;
     for(var i=1;i<=allowedDivs && block_number<=quantity_input.value;i++){
         newDiv = createDiv(block_number, String.fromCharCode(currentPage+64), i);

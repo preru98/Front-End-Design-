@@ -11,30 +11,47 @@
     <div class="left-div">
 
         <div class="left option-div">    
-            <h4>Options</h2>
+            <h4>Options</h4>
         </div>
 
         <div class="left quantity-div">
-            Quantity<br><br>
+            <strong>Quantity</strong>
+            <br><br>
             <input id="quantity" type="number" placeholder="Enter Quantity" value=3>  
         </div>
 
-        <div class="left">
-            <button id="backward-button">Backward</button>
-            <button id="forward-button">Forward</button>
-        </div>
+        <h4 id="page-number">Current Page: 1</h4>
 
     </div>
 
     <div id= "right-container" class="right-div">
-        
-        <div class="div-generated">
-            <div class="disk-number"><h4>1</h4></div>
-            <h3 id="text-div">
-                ITEM 1
-            </h3>
+        <div class="dynamic-div-container">
+            <div class="div-generated">
+                <div class="disk-number"><h4>1</h4></div>
+                <h3 id="text-div">
+                    ITEM A1
+                </h3>
+            </div>
+    
+            <div class="div-generated">
+                <div class="disk-number"><h4>2</h4></div>
+                <h3 id="text-div">
+                    ITEM B1
+                </h3>
+            </div>
+    
+            <div class="div-generated">
+                <div class="disk-number"><h4>3</h4></div>
+                <h3 id="text-div">
+                    ITEM C1
+                </h3>
+            </div>
         </div>
-        <h3 id="page-number">1</h3>
+        <div class="buttons-container">
+            <img id="backward-button" class="image" src="backArrow.png" alt="backArrow">
+            <img class="image" id="forward-button" src="frontArrow.png" alt="frontArrow">
+        </div>
+        
     </div>
     <script src="dynamic.js"></script>
     
