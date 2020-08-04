@@ -1,0 +1,85 @@
+body{
+    margin:0;
+    display: flex;
+}
+
+div{
+    border:2px solid white;
+}
+#main-container{
+    border:2px solid black;
+    height:100vh;
+    width:100vw;
+    background-color:cyan;
+}
+
+.left-div{
+    border:1px solid #a1a1a1;
+    /* height:100vh; */
+    /* width:20vw; */
+    flex:2;
+    background-color:#bfbfbf;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.right-div{
+    border:1px solid #a1a1a1;
+    /* height:100vh; */
+    /* width:20vw; */
+    flex:5;
+    background-color:#e7e6e6;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.div-generated{
+    display:flex;
+    height:100px;
+    width:80vw;
+    border:1px solid #a09c9c;
+    margin: 30px;
+    align-items: center;
+    text-align: center;
+    background-color: #d0cece;
+}
+
+.disk-number{
+    /* align-self:flex-start; */
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    margin:20px;
+    text-align: center;
+}
+
+.text-div{
+    justify-self:center;
+}
+
+.left{
+    margin-top:100px;
+    margin-bottom:50px;
+    background-color: #afabab;
+    text-align: center;
+    height: 70px;
+    border:1px solid #a09c9c;
+}
+
+.middle-div{
+    h
+}
+
+.option-div{
+    
+    
+}
+
+.quantity-div{
+    padding:10px;
+}
+
+
+
