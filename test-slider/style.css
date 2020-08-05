@@ -1,0 +1,170 @@
+body{
+    margin:0;
+    display: flex;
+    /* background-color: #e7e6e6; */
+}
+
+/* div{
+    border:2px solid white;
+} */
+
+#main-container{
+    border:2px solid black;
+    height:100vh;
+    width:100vw;
+    background-color:cyan;
+}
+
+.left-div{
+    border:1px solid #a1a1a1;
+    height:100vh;
+    /* width:20vw; */
+    flex:1;
+    background-color:#bfbfbf;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+
+.mid-div-clicked{
+    border:1px solid #d33c3c;
+    height:100vh;
+    /* width:20vw; */
+    flex:1;
+    background-color:#e29494;
+    animation-name: slide-right; 
+    animation-duration: 1.5s;
+}
+
+@keyframes slide-right{
+    0%{
+        flex:0;
+    }
+    100%{
+        flex:1;
+    }
+}
+
+@keyframes slide-left{
+    0%{
+        flex:1;
+    }
+    100%{
+        flex:0;
+        visibility: hidden;
+    }
+}
+
+.mid-div{
+    /* border:1px solid #d33c3c; */
+    height:100vh;
+     /* width:20vw; */
+    flex:0;
+    background-color:#eb5353;
+    visibility: hidden;
+}
+
+
+.right-div{
+    /* border:1px solid #a1a1a1; */
+    /* border:3px solid black; */
+    height:100vh;
+    /* width:20vw; */
+    flex:5;
+    background-color:#e7e6e6;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* margin: 0px; */
+    align-items:center;
+}
+
+.dynamic-div-container{
+    /* border:3px solid yellow; */
+    /* height:100vh; */
+    flex:4;
+    background-color:#e7e6e6;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.buttons-container{
+    /* border:3px solid blue; */
+    /* margin-top:100px;
+    margin-bottom:50px; */
+    /* background-color: #afabab; */
+    text-align: center;
+    /* height: 70px; */
+    flex:1;
+}
+
+.div-generated{
+    display:flex;
+    height:100px;
+    width:60vw;
+    border:1px solid #a09c9c;
+    margin: 30px;
+    align-items: center;
+    text-align: center;
+    background-color: #afabab;
+}
+
+.disk-number{
+    /* align-self:flex-start; */
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    margin:20px;
+    text-align: center;
+    background-color:	#d0cece;
+    border:1px solid#afabab;
+}
+
+.text-div{
+    justify-self:center;
+    /* color:greenyellow; */
+}
+
+.left{
+    margin-top:100px;
+    margin-bottom:50px;
+    background-color: #afabab;
+    text-align: center;
+    height: 70px;
+    border:1px solid #a09c9c;
+}
+
+/* .middle-div{
+    h
+} */
+
+/* .option-div{
+    
+    
+} */
+
+.quantity-div{
+    padding:10px;
+}
+
+.image{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+/* .mid-div{
+    position:absolute;
+    height:100vh;
+    width:100px;
+} */
+
+.option-div{
+    cursor: pointer;
+}
+
+
+
