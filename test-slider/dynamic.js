@@ -3,10 +3,12 @@ var quantity_input = document.getElementById('quantity');
 var PageNumber = document.getElementById('page-number');
 var forwardButton=document.getElementById('forward-button');
 var backwardButton = document.getElementById('backward-button');
+var greeting=document.getElementById('greeting');
 var firstPage=1;
 var allowedDivs=3;
 var currentPage = firstPage;
 var lastPage = firstPage;
+// var optionFlag=0;
 
 // alert("Begin :"+currentPage);
 // alert("Begin :"+lastPage);
@@ -15,14 +17,17 @@ optionButton.addEventListener('click', ()=>{
     var midDiv=document.getElementById('middle-container');
     midDiv.classList.remove('mid-div');
     midDiv.classList.add('mid-div-clicked');
-    newList=createOptionList(['Good Morning', 'Good Evening', 'Good Night']);
-    midDiv.appendChild(newList);
-    newList.addEventListener('change', function(){
-        newList.parentNode.removeChild(newList);
+    // newList=createOptionList(['Good Morning', 'Good Evening', 'Good Night']);
+    // midDiv.appendChild(newList);
+    var newList= document.getElementById("option-list");
+    newList.addEventListener('change', ()=>{
+        // newList.parentNode.removeChild(newList);
+        greeting.innerText=event.target.value;
         midDiv.style.animationName="slide-left";
         midDiv.addEventListener('animationend', ()=>{
             midDiv.classList.add('mid-div');
             midDiv.classList.remove('mid-div-clicked');
+            midDiv.style.animationName="";
         }, {
             once:true
         })
@@ -47,7 +52,7 @@ forwardButton.addEventListener('click', ()=>{
     if(currentPage<lastPage){
         currentPage++;
         // alert("Changed Current Page F:"+currentPage);
-        PageNumber.innerText="Current Page: "+currentPage;
+        // PageNumber.innerText="Current Page: "+currentPage;
         renderCurrentPage(currentPage);
     }
 })
@@ -56,7 +61,7 @@ backwardButton.addEventListener('click', ()=>{
     if(currentPage>1){
         currentPage--;
         // alert("Changed Current Page B:"+currentPage);
-        PageNumber.innerText="Current Page: "+currentPage;
+        // PageNumber.innerText="Current Page: "+currentPage;
         renderCurrentPage(currentPage);
     }
 })
@@ -67,7 +72,7 @@ quantity_input.addEventListener('change', ()=>{
     lastPage=Math.ceil(quantity_input.value/3);
     // alert("Changed Current Page :"+currentPage);
     // alert("Changed Last Page :"+lastPage);
-    PageNumber.innerText="Current Page: "+currentPage;
+    // PageNumber.innerText="Current Page: "+currentPage;
     renderCurrentPage(currentPage);
 })
 
@@ -103,7 +108,7 @@ deletePreviousDivs=() => {
 
 renderCurrentPage=(currentPage) => {
     deletePreviousDivs();
-
+    PageNumber.innerText="Current Page: "+currentPage;
     let rightContainer = document.querySelector('.dynamic-div-container');
     let block_number=(currentPage-firstPage)*allowedDivs+firstPage;
     for(var i=1;i<=allowedDivs && block_number<=quantity_input.value;i++){

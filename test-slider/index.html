@@ -5,9 +5,6 @@
     <link rel="stylesheet" href="style.css">    
 </head>
 <body>
-    <!-- <div id="main-container">
-
-    </div> -->
     <div class="left-div">
         <div id="option-div" class="left option-div">    
             <h4>Options</h4>
@@ -18,31 +15,39 @@
             <br><br>
             <input id="quantity" type="number" placeholder="Enter Quantity" value=3>  
         </div>
-        <h4 id="page-number">Current Page: 1</h4>
+        <div>
+            <h4 id="page-number">Current Page: 1</h4>
+            <h5 id="greeting">Good Morning</h5>
+        </div>
+        
     </div>
     <div id="middle-container" class="mid-div">
-        
+        <select id="option-list">
+            <option value="Good Morning">Good Morning</option>
+            <option value="Good Evening">Good Evening</option>
+            <option value="Good Night">Good Night</option>
+        </select>
     </div>
     <div id= "right-container" class="right-div">
         <div class="dynamic-div-container">
             <div class="div-generated">
                 <div class="disk-number"><h4>1</h4></div>
-                <h3 class="text-div" id="text-div">
+                <h3 class="text-div">
                     ITEM A1
                 </h3>
             </div>
     
             <div class="div-generated">
                 <div class="disk-number"><h4>2</h4></div>
-                <h3 id="text-div">
-                    ITEM A1
+                <h3 class="text-div">
+                    ITEM A2
                 </h3>
             </div>
     
             <div class="div-generated">
                 <div class="disk-number"><h4>3</h4></div>
-                <h3 id="text-div">
-                    ITEM A1
+                <h3 class="text-div">
+                    ITEM A3
                 </h3>
             </div>
         </div>
